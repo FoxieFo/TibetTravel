@@ -1,0 +1,13 @@
+.button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    border-color: transparent;
+    max-width: 100%;
+    cursor: pointer;
+    &.colorScheme__1{
+        background-color: var(--green);
+    }
+    &.colorScheme__2{
+        background-color: var(--white);
+    }
+}

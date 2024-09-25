@@ -1,0 +1,112 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &__toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        border: solid 1px var(--white);
+        border-radius: 8px;
+        padding: 14px 16px;
+        &Text{
+            color: var(--white);
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        top: 1;
+        width: 100%;
+        font-size: 1rem;
+        border: 1px solid #f1f1f155;
+        background-color: var(--list-task-background);
+        color: var(--list-text);
+        cursor: pointer;
+        border-radius: 5px;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+        z-index: 1;
+    }
+
+    &__menu_active {
+        max-height: 110px;
+        opacity: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    &__item {
+        padding: 0.8rem;
+        cursor: pointer;
+        background-color: var(--white);
+        &:hover {
+            color: var(--white);
+            background-color: var(--green);
+        }
+    }
+
+    .arrow {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        position: relative;
+        transition: 0.4s ease;
+        transform: rotate(0);
+        &:before, &:after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 23px;
+            background-color: transparent;
+            border-bottom: 12px solid #fff;
+            top: 0;
+            left: 0;
+            transition: 0.4s ease;
+        }
+        &:before {
+            transform: rotate(-135deg);
+        }
+        &:after {
+            transform: rotate(135deg);
+        }
+    }
+
+    &.active .arrow {
+        transform: translate(0, -6px);
+        &:before {
+            transform: rotate(-45deg);
+        }
+        &:after {
+            transform: rotate(45deg);
+        }
+    }
+
+    &__subtitle{
+        color: var(--white);
+        cursor: default;
+        padding-top: 8px;
+    }
+}
+
+//scrollbar styles
+.dropdown__menu_active::-webkit-scrollbar {
+    width: 8px;
+}
+.dropdown__menu_active::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+.dropdown__menu_active::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    &:hover {
+        background: #555;
+    }
+}

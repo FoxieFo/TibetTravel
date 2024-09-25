@@ -1,11 +1,12 @@
 import './App.css'
-import Header from './components/Header/Header'
+import StartMenu from './components/StartMenu/StartMenu'
+
 
 function App() {
 
   return (
     <>
-      <Header />
+      <StartMenu />
       {/* < Footer /> */}
     </>
   )

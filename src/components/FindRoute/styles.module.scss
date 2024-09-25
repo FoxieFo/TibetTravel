@@ -1,0 +1,13 @@
+.findroute{
+    &__container{
+        display: flex;
+        gap: 2%;
+        background-color: #FFFFFF33;
+        padding: 40px;
+        border-radius: 10px;
+    }
+    &__button {
+        width: 60%;
+        height: 48px;
+    }
+}

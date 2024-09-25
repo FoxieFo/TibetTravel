@@ -1,13 +1,24 @@
 .button {
     padding: 12px 24px;
+    font-weight: 700;
     border-radius: 4px;
-    border-color: transparent;
-    max-width: 100%;
     cursor: pointer;
+    border: 1px solid var(--green);
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
     &.colorScheme__1{
         background-color: var(--green);
+        color: var(--white);
+        &:hover{
+            color: var(--green);
+            background-color: var(--white);
+        }
     }
     &.colorScheme__2{
+        border: 1px solid var(--white);
         background-color: var(--white);
+        &:hover{
+            color: var(--white);
+            background-color: var(--green);
+        }
     }
 }

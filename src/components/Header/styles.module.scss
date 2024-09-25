@@ -1,12 +1,48 @@
 .header {
     &__container {
-        background-color: var(--yellow);
+        padding-top: 16px;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     &__menu {
         display: flex;
-        gap: 2%;
+        gap: 2rem;
+    }
+    &__options {
+        display: flex;
+        gap: 1.4rem;
         color: var(--white);
-        cursor: pointer;
+        align-items: center;
+        white-space: nowrap;
+        &Item {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 1.5px;
+                bottom: -5px;
+                left: 0;
+                background-color: var(--white);
+                transform-origin: bottom right;
+                transition: transform 0.3s ease-out;
+            }
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+    }
+    @media screen and (max-width: 885px){
+        &__menu {
+            display: none;
+        }
+        &__button {
+            display: none;
+        }
     }
 }

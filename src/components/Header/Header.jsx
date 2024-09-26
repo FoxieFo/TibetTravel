@@ -10,14 +10,14 @@ export default function Header() {
             <img src={Logo} alt="Logo" />
             <div className={s.header__menu}>
                 <ul className={s.header__options}>
-                    <li className={s.header__optionsItem}>Главная</li>
-                    <li className={s.header__optionsItem}>Про гида</li>
-                    <li className={s.header__optionsItem}>Программа тура</li>
-                    <li className={s.header__optionsItem}>Стоимость</li>
-                    <li className={s.header__optionsItem}>Блог</li>
-                    <li className={s.header__optionsItem}>Контакты</li>
+                    <li className={s.header__optionsItem}>Home</li>
+                    <li className={s.header__optionsItem}>About</li>
+                    <li className={s.header__optionsItem}>Tour program</li>
+                    <li className={s.header__optionsItem}>Pricing</li>
+                    <li className={s.header__optionsItem}>Blog</li>
+                    <li className={s.header__optionsItem}>Contacts</li>
                 </ul>
-                <Button className={s.header__button} title='Консультация'/>
+                <Button className={s.header__button} title='Consultation'/>
             </div>
         </header>
     );

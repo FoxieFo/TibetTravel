@@ -8,8 +8,7 @@ export default function StartMenu() {
             <div className={s.start__container}>
                 <Header />
                 <div className={s.start__menu}>
-                    <p className={s.start__menuText}>Насладись прогулкой в горах
-                    с командой единомышленников</p>
+                    <p className={s.start__menuText}>Enjoy a mountain hike with a group of like-minded adventurers</p>
                     <FindRoute />
                 </div>
             </div>

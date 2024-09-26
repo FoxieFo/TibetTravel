@@ -1,0 +1,34 @@
+.pdestinations {
+    &__container {
+        max-width: 1240px;
+        padding: 80px 20px;
+        margin: 0 auto;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        &Yellow{
+            text-transform: lowercase;
+            color: var(--yellow);
+            font-size: 1.2rem;
+            cursor: default;
+        }
+        &Black{
+            font-size: 2.2rem;
+            font-weight: 800;
+            padding: 10px 0 40px 0;
+            cursor: default;
+        }
+    }
+    &__cards{
+        display: flex;
+        gap: 1.5%;
+    }
+}

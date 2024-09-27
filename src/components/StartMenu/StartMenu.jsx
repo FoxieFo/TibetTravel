@@ -4,7 +4,7 @@ import FindRoute from '../ui/FindRoute/FindRoute';
 
 export default function StartMenu() {
     return (
-        <div className={s.start__bg}>
+        <section className={s.start__bg}>
             <div className={s.start__container}>
                 <Header />
                 <div className={s.start__menu}>
@@ -12,6 +12,6 @@ export default function StartMenu() {
                     <FindRoute />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

@@ -11,7 +11,7 @@ import Prices from './../../assets/images/icons/prices.svg'
 
 export default function BestOffer() {
     return (
-        <div className={s.bestoffer__bg}>
+        <section className={s.bestoffer__bg}>
             <div className={s.bestoffer__container}>
                 <div className={s.bestoffer__content}>
                     <div className={s.bestoffer__info}>
@@ -53,6 +53,6 @@ export default function BestOffer() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

@@ -9,7 +9,7 @@ import India from './../../assets/images/photos/landscape-13.png'
 
 export default function Blog() {
     return (
-        <div className={s.blog__bg}>
+        <section className={s.blog__bg}>
             <div className={s.blog__container}>
                 <div className={s.blog__content}>
                     <div className={s.blog__title}>
@@ -27,6 +27,6 @@ export default function Blog() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

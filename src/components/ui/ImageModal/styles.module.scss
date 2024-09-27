@@ -1,0 +1,49 @@
+.imagemodal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    &__overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--green);
+        opacity: 0.8;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            padding: 0 20px;
+        }
+    }
+    &__closebutton {
+        position: absolute;
+        top: -35px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        color: var(--white);
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

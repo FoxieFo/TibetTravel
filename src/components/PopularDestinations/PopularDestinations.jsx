@@ -8,7 +8,7 @@ import Button from '../ui/Button/Button';
 
 export default function PopularDestinations() {
     return (
-        <div className={s.pdestinations__container}>
+        <section className={s.pdestinations__container}>
             <div className={s.pdestinations__content}>
                 <div className={s.pdestinations__title}>
                     <span className={s.pdestinations__titleYellow}>traveler&apos;s choice</span>
@@ -21,6 +21,6 @@ export default function PopularDestinations() {
                 </div>
                 <Button title={'Top destinations'} />
             </div>
-        </div>
+        </section>
     );
 }

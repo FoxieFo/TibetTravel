@@ -20,7 +20,7 @@ export default function Explore() {
     };
 
     return (
-            <div className={s.explore__container}>
+            <section className={s.explore__container}>
                 <div className={s.explore__content}>
                     <div className={s.explore__media}>
                         <img className={s.explore__mediaImage} alt='Mountains' src={Mountains}>
@@ -41,6 +41,6 @@ export default function Explore() {
                     </div>
                     <VideoModal isOpen={isVideoOpen} onClose={handleVideoClose}/>
                 </div>
-            </div>
+            </section>
         );
 }

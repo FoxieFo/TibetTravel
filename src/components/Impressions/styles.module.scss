@@ -1,2 +1,55 @@
 .impressions {
+    &__container{
+        max-width: 1240px;
+        padding: 80px 20px;
+        margin: 0 auto;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        &Yellow{
+            text-transform: lowercase;
+            color: var(--yellow);
+            font-size: 1.2rem;
+            cursor: default;
+        }
+        &Black{
+            font-size: 2.2rem;
+            font-weight: 800;
+            padding: 10px 0 40px 0;
+            cursor: default;
+        }
+    }
+    &__images {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 
+        "pic1 pic1 pic2 pic3"
+        "pic4 pic5 pic5 pic6"
+        ". . . ."; 
+        gap: 20px 20px;
+        .pic{
+            border-radius: 5px;
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+            cursor: pointer;
+        }
+        .pic1 { grid-area: pic1; }
+        .pic2 { grid-area: pic2; }
+        .pic3 { grid-area: pic3; }
+        .pic4 { grid-area: pic4; }
+        .pic5 { grid-area: pic5; }
+        .pic6 { grid-area: pic6; }
+    }
+    &__button{
+        align-self: center;
+    }
 }

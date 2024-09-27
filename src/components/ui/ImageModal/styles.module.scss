@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     z-index: 3;
+
     &__overlay{
         position: absolute;
         top: 0;
@@ -15,29 +16,27 @@
         right: 0;
         bottom: 0;
         background-color: var(--green);
-        opacity: 0.8;
+        opacity: 0.6;
     }
 
     &__content {
         position: relative;
-        z-index: 2;
-        width: 100%;
-        max-width: 800px;
-        height: auto;
-
-        iframe {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            padding: 0 20px;
+        z-index: 10;
+        img {
+            max-width: 100%;
+            max-height: 100%;
         }
     }
+
     &__closebutton {
         position: absolute;
-        top: -35px;
-        right: 20px;
-        background: transparent;
+        padding: 6px;
+        border-radius: 6px;
+        top: -55px;
+        right: 120px;
+        background: var(--green);
         border: none;
-        font-size: 24px;
+        font-size: 1.5rem;
         color: var(--white);
         cursor: pointer;
         transition: opacity 0.3s;
@@ -45,5 +44,46 @@
         &:hover {
             opacity: 0.8;
         }
+    }
+    
+    &__modalinner{
+        display: flex;
+        padding: 0 20px;
+        &Image{
+            border-radius: 5px;
+            height: 350px;
+            object-fit: cover;
+            width: 450px;
+        }
+        &Prev{
+            width: 80px;
+            margin-right: 20px;
+            border-radius: 8px;
+            height: 350px;
+            background-size: 50px;
+            background-repeat: no-repeat;
+            background-color: var(--green);
+            background-image: url('./../../../assets/images/icons/prev.svg');
+            background-position: center;
+            transition: opacity 0.3s;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        &Next{
+            width: 80px;
+            margin-left: 20px;
+            border-radius: 8px;
+            height: 350px;
+            background-size: 50px;
+            background-repeat: no-repeat;
+            background-color: var(--green);
+            background-image: url('./../../../assets/images/icons/next.svg');
+            background-position: center;
+            transition: opacity 0.3s;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
     }
 }

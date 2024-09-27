@@ -1,0 +1,43 @@
+.blog {
+    &__bg{
+        background-color: #F3F5F4;
+    }
+    &__container{
+        max-width: 1240px;
+        padding: 80px 20px;
+        margin: 0 auto;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        &Yellow{
+            text-transform: lowercase;
+            color: var(--yellow);
+            font-size: 1.2rem;
+            cursor: default;
+        }
+        &Black{
+            font-size: 2.2rem;
+            font-weight: 800;
+            padding: 10px 0 40px 0;
+            cursor: default;
+        }
+    }
+    &__articlecards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    &__button{
+        align-self: center;
+    }
+}

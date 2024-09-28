@@ -58,8 +58,10 @@
                 &Item{
                     display: flex;
                     gap: 8px;
+                    color: var(--white);
                     cursor: pointer;
                     &:hover{
+                        color: var(--yellow);
                         a {
                             color: var(--yellow);
                         }

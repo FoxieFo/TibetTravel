@@ -36,12 +36,13 @@ export default function Impressions() {
                 </div>
                 <div className={s.impressions__images}>
                     {images.map((image, index) => (
-                        <img
+                        <div
                             key={index}
-                            className={`${s[`pic${index + 1}`]} ${s.pic}`}
-                            src={image}
+                            className={`${s[`pic${index + 1}`]} ${s.picWrapper}`}
                             onClick={() => openModal(index)}
-                        />
+                        >
+                            <img className={s.pic} src={image} alt={`pic${index + 1}`} />
+                        </div>
                     ))}
                 </div>
                 <div className={s.impressions__button}>

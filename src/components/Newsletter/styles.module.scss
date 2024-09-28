@@ -1,0 +1,86 @@
+.newsletter {
+    &__container {
+        max-width: 1180px;
+        padding: 0px 20px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        margin-bottom: -96px;
+    }
+
+    &__content {
+        display: flex;
+        background-color: var(--white);
+        gap: 8%;
+        padding: 40px 100px;
+        border-radius: 6px;
+        -webkit-box-shadow: 0px 0px 12px 7px rgba(0, 0, 0, 0.21);
+        -moz-box-shadow: 0px 0px 12px 7px rgba(0, 0, 0, 0.21);
+        box-shadow: 0px 0px 12px 7px rgba(0, 0, 0, 0.21);
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 380px;
+
+        &Yellow {
+            color: var(--yellow);
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+
+        &Black {
+            color: var(--black);
+            font-weight: 800;
+            font-size: 2rem;
+        }
+    }
+
+    &__subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &Title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        &Form {
+            display: flex;
+            gap: 2%;
+
+            &Input {
+                background-color: #F3F5F4;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                padding: 12px;
+                font-size: 1rem;
+                width: 40%; //
+                &::placeholder {
+                    color: var(--black);
+                    opacity: 0.5;
+                }
+                &:focus {
+                    border: 1px solid var(--yellow);
+                    outline: none;
+                }
+            }
+        }
+
+        &Policy {
+            &Link {
+                text-decoration: underline;
+                color: var(--black);
+                transition: color 0.2s ease-in-out;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: var(--yellow);
+                }
+            }
+        }
+    }
+}

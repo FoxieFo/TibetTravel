@@ -14,14 +14,18 @@
         &Name{
             color: var(--white);
             font-size: 1.1rem;
+            transition: color 0.3s ease-in-out;
             &:hover{
+                color: var(--yellow);
                 text-decoration: underline;
             }
         }
         &Link{
             color: var(--white);
             font-size: 1.1rem;
+            transition: color 0.3s ease-in-out;
             &:hover{
+                color: var(--yellow);
                 text-decoration: underline;
             }
         }

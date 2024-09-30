@@ -9,7 +9,7 @@
     }
     &__content{
         display: flex;
-        gap: 10%;
+        gap: 5%;
     }
     &__info{
         &Headline{
@@ -52,9 +52,10 @@
     &__media{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+        grid-gap: 10px 10px;
         justify-items: center;
         align-items: center;
+        height: 510px;
         &Img{
             width: 250px;
             height: 250px;
@@ -76,5 +77,16 @@
                 border-top-right-radius: 50px;
                 border-bottom-left-radius: 50px;
             }
+    }
+    @media (max-width: 1000px){
+        &__media {
+            height: auto;
+            justify-content: center;
+            grid-template-columns: 150px;
+            &Img{
+                max-width: 100%;
+                max-height: 150px;
+            }
+        }
     }
 }

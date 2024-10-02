@@ -106,7 +106,6 @@ export default function PopularDestinations() {
                         </>
                     )}
                 </div>
-
                 <Button className={s.pdestinations__button} title={'Top destinations'} />
             </div>
         </section>

@@ -46,4 +46,24 @@
             }
         }
     }
+    @media (max-width: 745px) {
+        &__content{
+            flex-direction: column;
+            width: 285px;
+            gap: 16px;
+            align-items: center;
+            padding: 0 16px 16px;
+        }
+        &__info{
+            gap: 14px;
+            height: 250px;
+        }
+        &__img{
+            width: 285px;
+            height: 280px;
+            border-radius: 0;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+    }
 }

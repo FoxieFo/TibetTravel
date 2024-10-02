@@ -35,9 +35,18 @@
         grid-gap: 10px;
         justify-items: center;
         align-items: center;
-        padding-bottom: 50px;
     }
     &__button{
+        margin-top: 32px;
         align-self: center;
+    }
+    @media (max-width: 1000px) {
+        &__articlecards{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    @media (max-width: 745px) {
     }
 }

@@ -12,7 +12,7 @@
         display: flex;
         background-color: var(--white);
         gap: 8%;
-        padding: 40px 100px;
+        padding: 40px;
         border-radius: 6px;
         -webkit-box-shadow: 0px 0px 12px 7px rgba(0, 0, 0, 0.21);
         -moz-box-shadow: 0px 0px 12px 7px rgba(0, 0, 0, 0.21);
@@ -50,7 +50,7 @@
 
         &Form {
             display: flex;
-            gap: 2%;
+            gap: 16px;
 
             &Input {
                 background-color: #F3F5F4;
@@ -79,6 +79,45 @@
                 &:hover {
                     text-decoration: underline;
                     color: var(--yellow);
+                }
+            }
+        }
+    }
+    @media (max-width: 879px){
+        &__content{
+            flex-direction: column;
+        }
+        &__title {
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &__subscribe{
+            &Form{
+                &Button{
+                    width: 50%;
+                }
+            }
+        }
+    }
+    @media (max-width: 574px){
+        &__content{
+            flex-direction: column;
+        }
+        &__title {
+            max-width: 100%;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        &__subscribe{
+            &Form{
+                display: flex;
+                flex-direction: column;
+                &Input{
+                    width: 100%;
+                }
+                &Button{
+                    width: 100%;
                 }
             }
         }

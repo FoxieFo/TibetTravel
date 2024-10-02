@@ -13,7 +13,7 @@ export default function Newsletter() {
                     <h5 className={s.newsletter__subscribeTitle}>Enter your email address</h5>
                     <div className={s.newsletter__subscribeForm}>
                         <input type="text" placeholder="name@domain.com" className={s.newsletter__subscribeFormInput} />
-                        <Button title={'Subscribe to updates'} />
+                        <Button className={s.newsletter__subscribeFormButton} title={'Subscribe to updates'} />
                     </div>
                     <div className={s.newsletter__subscribePolicy}>
                         By subscribing, you automatically agree to the{' '}

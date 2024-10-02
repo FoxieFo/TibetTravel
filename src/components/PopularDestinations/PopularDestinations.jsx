@@ -42,7 +42,7 @@ export default function PopularDestinations() {
                             autoplay={{
                                 delay: 3000,
                                 disableOnInteraction: false,
-                              }}
+                            }}
                             style={{ maxWidth: '100%' }}
                             modules={[Autoplay]}
                         >

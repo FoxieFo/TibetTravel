@@ -45,6 +45,7 @@
             position: relative;
             width: 100%;
             cursor: pointer;
+        
             &::before {
                 content: '';
                 position: absolute;
@@ -60,7 +61,8 @@
                 transition: opacity 0.3s ease;
                 z-index: 2;
             }
-            &::after{
+        
+            &::after {
                 content: '';
                 position: absolute;
                 top: 0;
@@ -73,9 +75,11 @@
                 border-radius: 5px;
                 z-index: 1;
             }
+        
             &:hover::before {
                 opacity: 1;
             }
+        
             &:hover::after {
                 opacity: 1;
             }
@@ -117,5 +121,29 @@
 
     &__button {
         align-self: center;
+    }
+
+    @media (max-width: 719px) {
+        &__images {
+            display: flex;
+            flex-direction: row;
+
+            .picWrapper {
+                &:hover::before {
+                    opacity: 0;
+                }
+
+                &:hover::after {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    @media (max-width: 420px) {
+        &__title {
+            &Black {
+                text-align: center;
+            }
+        }
     }
 }

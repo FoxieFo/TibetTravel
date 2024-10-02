@@ -29,7 +29,17 @@
     }
     &__cards{
         display: flex;
+        width: 100%;
         gap: 1.5%;
-        padding-bottom: 50px;
+    }
+    &__button {
+        margin-top: 50px;
+    }
+    @media (max-width: 367px) {
+        &__title{
+            &Black{
+                text-align: center;
+            }
+        }
     }
 }

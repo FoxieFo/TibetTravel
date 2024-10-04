@@ -1,17 +1,20 @@
 .start {
-    &__bg{
+    &__bg {
         background-image: url('./../../assets/images/background/background.png');
         background-size: cover;
         background-repeat: no-repeat;
     }
-    &__container{
+
+    &__container {
         max-width: 1240px;
         padding: 0 20px;
         margin: 0 auto;
     }
-    &__menu{
+
+    &__menu {
         padding-top: 463px;
         padding-bottom: 82px;
+
         &Text {
             font-weight: 700;
             text-transform: uppercase;
@@ -19,6 +22,24 @@
             font-size: 3rem;
             padding-bottom: 41px;
             line-height: 65px;
+        }
+
+        &Button {
+            display: none;
+        }
+    }
+
+    @media(max-width: 559px) {
+        &__menu {
+            padding-top: 300px;
+
+            &Text {
+                font-size: 2rem;
+            }
+
+            &Button {
+                display: block;
+            }
         }
     }
 }

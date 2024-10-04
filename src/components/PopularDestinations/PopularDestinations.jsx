@@ -39,10 +39,12 @@ export default function PopularDestinations() {
                         <Swiper
                             slidesPerView="auto"
                             spaceBetween={10}
+                            loop={true}
                             autoplay={{
-                                delay: 3000,
+                                delay: 0,
                                 disableOnInteraction: false,
                             }}
+                            speed={8000}
                             style={{ maxWidth: '100%' }}
                             modules={[Autoplay]}
                         >

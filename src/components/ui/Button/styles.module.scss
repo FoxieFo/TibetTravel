@@ -5,6 +5,7 @@
     cursor: pointer;
     border: 1px solid var(--green);
     transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    color: var(--green);
     &.colorScheme__1{
         background-color: var(--green);
         color: var(--white);

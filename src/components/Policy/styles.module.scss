@@ -30,4 +30,11 @@
             }
         }
     }
+    @media (max-width:459px){
+        &__content{
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+    }
 }

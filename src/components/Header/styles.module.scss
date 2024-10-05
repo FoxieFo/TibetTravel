@@ -18,11 +18,13 @@
         align-items: center;
         white-space: nowrap;
         margin-top: 15px;
-
         &Item {
             display: inline-block;
             position: relative;
             cursor: pointer;
+            & a{
+                color: var(--white);
+            }
 
             &::after {
                 content: '';
@@ -98,6 +100,13 @@
                     cursor: pointer;
                     font-size: 1.3rem;
                     transition: color 0.2s ease;
+                    & a{
+                        color: var(--white);
+                        transition: color 0.2s ease;
+                        &:hover {
+                            color: var(--yellow);
+                        }
+                    }
                     &:hover {
                         color: var(--yellow);
                         text-decoration: underline;

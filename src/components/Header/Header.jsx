@@ -22,6 +22,15 @@ const CloseIcon = ({ onClick }) => (
     </div>
 );
 
+const menuItems = [
+    { id: 1, text: 'Home', link: '/' },
+    { id: 2, text: 'About', link: '/' },
+    { id: 3, text: 'Tour program', link: '/' },
+    { id: 4, text: 'Pricing', link: '/' },
+    { id: 5, text: 'Blog', link: '/' },
+    { id: 6, text: 'Contacts', link: '/' }
+];
+
 export default function Header() {
     const [show, setShow] = useState(false);
 
@@ -33,14 +42,13 @@ export default function Header() {
             <img src={Logo} alt="Logo" />
             <div className={s.header__menu}>
                 <ul className={s.header__options}>
-                    <li className={s.header__optionsItem}>Home</li>
-                    <li className={s.header__optionsItem}>About</li>
-                    <li className={s.header__optionsItem}>Tour program</li>
-                    <li className={s.header__optionsItem}>Pricing</li>
-                    <li className={s.header__optionsItem}>Blog</li>
-                    <li className={s.header__optionsItem}>Contacts</li>
+                    {menuItems.map(item => (
+                        <li key={item.id} className={s.header__optionsItem}>
+                            <a href={item.link}>{item.text}</a>
+                        </li>
+                    ))}
                 </ul>
-                <ButtonCstm className={s.header__button} title='Consultation' />
+                <ButtonCstm className={s.header__button} title="Consultation" />
                 <div className={s.header__hamburger}>
                     <Button variant="primary" onClick={handleShow}>
                         <div className={s.header__hamburgerLines}>
@@ -56,11 +64,12 @@ export default function Header() {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <ul className={s.header__hamburgerOffcanvasOptions}>
-                                    <li className={s.header__hamburgerOffcanvasOptionsOption}><ArrowIcon /> About</li>
-                                    <li className={s.header__hamburgerOffcanvasOptionsOption}><ArrowIcon /> Tour program</li>
-                                    <li className={s.header__hamburgerOffcanvasOptionsOption}><ArrowIcon /> Pricing</li>
-                                    <li className={s.header__hamburgerOffcanvasOptionsOption}><ArrowIcon /> Blog</li>
-                                    <li className={s.header__hamburgerOffcanvasOptionsOption}><ArrowIcon /> Contacts</li>
+                                    {menuItems.map(item => (
+                                        <li key={item.id} className={s.header__hamburgerOffcanvasOptionsOption}>
+                                            <ArrowIcon />
+                                            <a href={item.link}>{item.text}</a>
+                                        </li>
+                                    ))}
                                 </ul>
                             </Offcanvas.Body>
                         </div>

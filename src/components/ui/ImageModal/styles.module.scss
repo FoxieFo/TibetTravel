@@ -9,7 +9,7 @@
     align-items: center;
     z-index: 3;
 
-    &__overlay{
+    &__overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -19,12 +19,21 @@
         opacity: 0.6;
     }
 
+
     &__content {
-        position: relative;
-        z-index: 10;
+        width: 100%;
+    }
+
+    &__swiperSlide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         img {
-            max-width: 100%;
-            max-height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            height: 350px;
+            width: 450px;
         }
     }
 
@@ -32,11 +41,9 @@
         position: absolute;
         padding: 6px;
         border-radius: 6px;
-        top: -55px;
-        right: 120px;
-        background: var(--green);
+        top: 20px;
+        right: 20px;
         border: none;
-        font-size: 1.5rem;
         color: var(--white);
         cursor: pointer;
         transition: opacity 0.3s;
@@ -44,46 +51,5 @@
         &:hover {
             opacity: 0.8;
         }
-    }
-    
-    &__modalinner{
-        display: flex;
-        padding: 0 20px;
-        &Image{
-            border-radius: 5px;
-            height: 350px;
-            object-fit: cover;
-            width: 450px;
-        }
-        &Prev{
-            width: 80px;
-            margin-right: 20px;
-            border-radius: 8px;
-            height: 350px;
-            background-size: 50px;
-            background-repeat: no-repeat;
-            background-color: var(--green);
-            background-image: url('./../../../assets/images/icons/prev.svg');
-            background-position: center;
-            transition: opacity 0.3s;
-                &:hover {
-                    opacity: 0.8;
-                }
-            }
-        &Next{
-            width: 80px;
-            margin-left: 20px;
-            border-radius: 8px;
-            height: 350px;
-            background-size: 50px;
-            background-repeat: no-repeat;
-            background-color: var(--green);
-            background-image: url('./../../../assets/images/icons/next.svg');
-            background-position: center;
-            transition: opacity 0.3s;
-                &:hover {
-                    opacity: 0.8;
-                }
-            }
     }
 }

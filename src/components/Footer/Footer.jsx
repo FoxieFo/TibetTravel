@@ -44,9 +44,9 @@ export default function Footer() {
             <div className={s.footer__container}>
                 <div className={s.footer__content}>
                     <div className={s.footer__contentInfo}>
-                        <div className={s.footer__contentInfoTitle}>WanderWave</div>
+                        <div className={s.footer__contentInfoTitle}>Tibet Travel</div>
                         <div className={s.footer__contentInfoText}>
-                            WanderWave is your go-to travel partner, dedicated to crafting unforgettable adventures around the globe. We are here to help you ride the wave of your next adventure. Let’s make your travel dreams a reality!
+                            Tibet Travel is your go-to travel partner, dedicated to crafting unforgettable adventures around the globe. We are here to help you ride the wave of your next adventure. Let’s make your travel dreams a reality!
                         </div>
                         <div className={s.footer__contentInfoAddress}>
                             <span className={s.footer__contentInfoAddressEmail}>info@domain.com</span>
